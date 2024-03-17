@@ -30,7 +30,7 @@ def _draw(strokes, lines, filename, stroke_colors=None, stroke_widths=None):
 
         strokes[:, 1] *= -1
         strokes[:, :2] -= strokes[:, :2].min() + initial_coord
-        strokes[:, 0] += (view_width - strokes[:, 0].max()) / 2
+        # strokes[:, 0] += (view_width - strokes[:, 0].max()) / 2
 
         prev_eos = 1.0
         p = "M{},{} ".format(0, 0)
